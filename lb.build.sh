@@ -4,8 +4,10 @@ sudo apt update
 sudo apt install -y sudo
 
 sudo apt install -y autoconf autoconf-archive automake build-essential git cmake libavcodec-dev libgl1-mesa-dev nasm \
-                 ninja-build qt6-base-dev qt6-tools-dev-tools qt6-multimedia-dev qt6-wayland ccache fonts-liberation2 \
-                 zip unzip curl tar wget lsb-release nano vim ninja-build
+                 ninja-build ccache fonts-liberation2 \
+                 zip unzip curl tar wget lsb-release nano vim
+
+sudo apt install -y qt6-base-dev qt6-tools-dev-tools qt6-multimedia-dev qt6-wayland
 
 
 ls -al /usr/bin/ninja /usr/bin/ninja-build||echo "NO ERR"

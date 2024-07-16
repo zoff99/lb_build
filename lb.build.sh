@@ -18,8 +18,12 @@ echo "deb [signed-by=/usr/share/keyrings/llvm-snapshot.gpg.key] https://apt.llvm
 sudo apt update -y && sudo apt install clang-18 clangd-18 clang-format-18 clang-tidy-18 lld-18 -y
 
 https://github.com/LadybirdBrowser/ladybird
-cd ladybird/
+cd ladybird/||echo "NO ERR"
 
+echo "-----------------------------"
+pwd
+ls -al
+echo "-----------------------------"
 
 # BUILD_PRESET=Debug ./Meta/ladybird.sh run ladybird
 time ./Meta/ladybird.sh build ladybird && time ./Meta/ladybird.sh install ladybird

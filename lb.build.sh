@@ -17,8 +17,8 @@ sudo wget -O /usr/share/keyrings/llvm-snapshot.gpg.key https://apt.llvm.org/llvm
 echo "deb [signed-by=/usr/share/keyrings/llvm-snapshot.gpg.key] https://apt.llvm.org/$(lsb_release -sc)/ llvm-toolchain-$(lsb_release -sc)-18 main" | sudo tee -a /etc/apt/sources.list.d/llvm.list
 sudo apt update -y && sudo apt install clang-18 clangd-18 clang-format-18 clang-tidy-18 lld-18 -y
 
-https://github.com/LadybirdBrowser/ladybird
-cd ladybird/||echo "NO ERR"
+git clone https://github.com/LadybirdBrowser/ladybird
+cd ladybird/
 
 echo "-----------------------------"
 pwd

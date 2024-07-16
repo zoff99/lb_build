@@ -5,7 +5,7 @@ apt install -y sudo
 
 sudo apt install -y autoconf autoconf-archive automake build-essential git cmake libavcodec-dev libgl1-mesa-dev nasm \
                  ninja-build qt6-base-dev qt6-tools-dev-tools qt6-multimedia-dev qt6-wayland ccache fonts-liberation2 \
-                 zip unzip curl tar wget lsb-release nano vim
+                 zip unzip curl tar wget lsb-release nano vim ninja-build
 
 
 wget -O - https://apt.kitware.com/keys/kitware-archive-latest.asc 2>/dev/null | gpg --dearmor - | sudo tee /usr/share/keyrings/kitware-archive-keyring.gpg >/dev/null

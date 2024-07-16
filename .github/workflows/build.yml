@@ -37,5 +37,7 @@ jobs:
 
       - name: compile binary
         run: |
-          lb.build.sh
+          id -a
+          pwd
+          ./lb.build.sh
 

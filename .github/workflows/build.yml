@@ -40,4 +40,17 @@ jobs:
           id -a
           pwd
           ./lb.build.sh
+          echo "===================="
+          ls -al /home/runner/work/lb_build/lb_build/
+          echo "===================="
+          ls -al /home/runner/work/lb_build/lb_build/ladybird/
+          echo "===================="
+          ls -al /home/runner/work/lb_build/lb_build/ladybird/Build
+
+      - name: upload-bin
+        uses: actions/upload-artifact@v4
+        with:
+          name: nightly-bin
+          path: |
+            /home/runner/work/lb_build/lb_build/ladybird/Build/
 

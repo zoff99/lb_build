@@ -8,6 +8,8 @@ sudo apt install -y autoconf autoconf-archive automake build-essential git cmake
                  zip unzip curl tar wget lsb-release nano vim ninja-build
 
 
+ls -al /usr/bin/ninja /usr/bin/ninja-build||echo "NO ERR"
+
 wget -O - https://apt.kitware.com/keys/kitware-archive-latest.asc 2>/dev/null | gpg --dearmor - | sudo tee /usr/share/keyrings/kitware-archive-keyring.gpg >/dev/null
 echo "deb [signed-by=/usr/share/keyrings/kitware-archive-keyring.gpg] https://apt.kitware.com/ubuntu/ $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/kitware.list
 sudo apt update -y && sudo apt install cmake -y

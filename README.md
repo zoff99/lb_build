@@ -1,2 +1,1 @@
-# lb_build
-lb build
+# build LadybirdBrowser
